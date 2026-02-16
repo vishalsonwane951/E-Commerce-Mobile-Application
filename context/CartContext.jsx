@@ -7,9 +7,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  /* =========================
-     LOAD CART FROM STORAGE
-  ========================== */
+
   useEffect(() => {
     const loadCart = async () => {
       try {
@@ -27,18 +25,12 @@ export const CartProvider = ({ children }) => {
     loadCart();
   }, []);
 
-  /* =========================
-     SAVE CART TO STORAGE
-  ========================== */
   useEffect(() => {
     if (!loading) {
       AsyncStorage.setItem("cart", JSON.stringify(cart));
     }
   }, [cart, loading]);
 
-  /* =========================
-     ADD TO CART
-  ========================== */
   const addToCart = (product) => {
     setCart((prevCart) => {
       const existing = prevCart.find(item => item.id === product.id);
@@ -55,16 +47,11 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  /* =========================
-     REMOVE ITEM
-  ========================== */
   const removeFromCart = (id) => {
     setCart(prevCart => prevCart.filter(item => item.id !== id));
   };
 
-  /* =========================
-     UPDATE QUANTITY
-  ========================== */
+  
   const updateQuantity = (id, type) => {
     setCart(prevCart =>
       prevCart.map(item => {
@@ -75,27 +62,21 @@ export const CartProvider = ({ children }) => {
 
           if (type === "dec") {
             if (item.quantity === 1) {
-              // If quantity becomes 0 → remove item
               return null;
             }
             return { ...item, quantity: item.quantity - 1 };
           }
         }
         return item;
-      }).filter(Boolean) // remove null items
+      }).filter(Boolean) 
     );
   };
 
-  /* =========================
-     CLEAR CART
-  ========================== */
+  
   const clearCart = () => {
     setCart([]);
   };
 
-  /* =========================
-     TOTAL PRICE
-  ========================== */
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity,
     0

@@ -27,7 +27,6 @@
           </View>
         ) : (
           <>
-            {/* Cart Items */}
             <FlatList
               data={cart}
               keyExtractor={(item) => item.id.toString()}
@@ -36,7 +35,6 @@
               contentContainerStyle={{ paddingBottom: 120 }}
             />
 
-            {/* Total Section */}
             <View
               style={[
                 styles.totalContainer,
@@ -66,7 +64,6 @@
                 </Text>
               </View>
 
-              {/*  Checkout Button */}
               <CustomButton
                 title="Proceed to Checkout"
                 onPress={() => alert("Checkout functionality coming soon.." )}

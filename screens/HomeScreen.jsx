@@ -16,7 +16,7 @@ import ProductCard from "../components/ProductCard";
 import CustomButton from "../components/CustomButton";
 
 export default function HomeScreen({ navigation }) {
-  const { dark, toggleTheme, theme } = useContext(ThemeContext); // ✅ use context
+  const { dark, toggleTheme, theme } = useContext(ThemeContext); 
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -86,7 +86,7 @@ export default function HomeScreen({ navigation }) {
 
       {/* Dark Mode Toggle */}
       <TouchableOpacity
-        onPress={toggleTheme} // ✅ use context toggle
+        onPress={toggleTheme}
         style={{
           backgroundColor: theme.card,
           padding: 10,

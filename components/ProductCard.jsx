@@ -49,12 +49,10 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     borderRadius: 12,
 
-    // iOS shadow
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 6,
 
-    // Android shadow
     elevation: 5
   },
   image: {

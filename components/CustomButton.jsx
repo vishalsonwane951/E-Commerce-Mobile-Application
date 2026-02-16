@@ -32,9 +32,9 @@ const textStyle = [
   {
     color: dark
       ? isPrimary
-        ? "#f3eaea"  // black text on white background
-        : "#ffffff"  // white text when not selected
-      : "#050404"  // white text on primary color
+        ? "#f3eaea"  
+        : "#ffffff"  
+      : "#050404" 
   }
 ];
 

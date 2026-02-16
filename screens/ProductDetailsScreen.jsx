@@ -15,7 +15,7 @@ import CustomButton from "../components/CustomButton";
 export default function ProductDetailsScreen({ route, navigation }) {
   const { product } = route.params;
   const { addToCart } = useContext(CartContext);
-  const { theme } = useContext(ThemeContext); // use theme directly
+  const { theme } = useContext(ThemeContext); 
   const { height } = Dimensions.get("window");
   const { dark } = useContext(ThemeContext);
 
