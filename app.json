@@ -8,17 +8,15 @@
     "icon": "./assets/e-icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "platforms": [
-      "android"
-    ],
+    "platforms": ["android"],
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/e-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/e-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,

@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
   },
   shopButton: {
     paddingHorizontal: 40,
-    paddingVertical: 15,
+    paddingVertical: 5,
     borderRadius: 25,
   },
   summaryCard: {
