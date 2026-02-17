@@ -56,7 +56,8 @@ const styles = StyleSheet.create({
   title: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
   input: {
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#0c0505",
+    color:'#000000',
     padding: 12,
     borderRadius: 8,
     marginBottom: 15

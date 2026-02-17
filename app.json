@@ -1,6 +1,6 @@
 {
   "expo": {
-      "jsEngine": "hermes",
+    "jsEngine": "hermes",
     "name": "e-commerce-app",
     "slug": "e-commerce-app",
     "version": "1.0.0",
@@ -8,21 +8,27 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-
-    "platforms": ["android"],
-
+    "platforms": [
+      "android"
+    ],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
-    }
+      "edgeToEdgeEnabled": true,
+      "package": "com.vishalsonwane951.ecommerceapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5b4f77e7-1216-4457-8083-4b7ea5e08d44"
+      }
+    },
+    "owner": "vishalsonwane951"
   }
 }
