@@ -160,6 +160,43 @@ Expo Vector Icons
 2️⃣ Start Project
 npx expo start
 
+## Screenshots
+
+### Login Screen
+![Login Screen](images/login.png)
+
+### Home Screen (Light Mode)
+![Home Screen Light](images/home_light.png)
+
+### Home Screen (Dark Mode)
+![Home Screen Dark](images/home_dark.png)
+
+### Product Details Screen
+![Product Details](images/product_details.png)
+
+### Cart Screen
+![Cart Screen](images/cart.png)
+
+## Demo Video
+
+A 3–5 minute demo video is included showing:
+
+Authentication flow
+
+Product browsing
+
+Add to cart
+
+Quantity update
+
+Dark mode toggle
+
+Category filter
+
+Search functionality
+
+LINK: 
+
 ### Assumptions Made
 Authentication is frontend-only (no backend integration).
 
