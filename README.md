@@ -1,6 +1,7 @@
 ### E-Commerce Mobile Application
-Built with Expo (React Native)
+A modern e-commerce mobile application built with React Native and Expo. Features a beautiful UI with dark/light theme support, product browsing, cart management, and more.
 
+Built with: Expo (React Native)
 👤 Developer: VISHAL SONWANE
 📅 Submission Type: Assignment Project
 📱 Platform: Expo (React Native)
@@ -21,68 +22,71 @@ Custom Theming (Light & Dark Mode)
 
 The application demonstrates core mobile development concepts including authentication UI, product listing, cart management, API integration, reusable components, and responsive styling.
 
-### Features Implemented
-1️⃣ Authentication
+Authentication
 
-Login Screen
+Login Screen – Secure login with email & password validation
 
-Signup Screen
+Signup Screen – New user registration with validation
 
-Email & Password validation
-
-Navigation after authentication
+Navigation – Redirects after successful login/signup
 
 2️⃣ Home Screen
 
-Product listing (Image, Title, Price)
+Product Catalog – Browse products with grid layout
 
-Scrollable list using FlatList
+Scrollable List – Smooth scrolling using FlatList
 
-Loading indicator
+Loading Indicator – Shows while fetching products
 
-Error handling
+Error Handling – Displays errors gracefully
 
 3️⃣ Product Details Screen
 
-Product image
+Product Image – Detailed view of product images
 
-Product description
+Description & Price – Displays product details clearly
 
-Product price
+Add to Cart – Easily add products to shopping cart
 
-Add to Cart functionality
+Navigate to Cart – Quick access to cart screen
 
-Navigate to Cart
+4️⃣ Shopping Cart
 
-4️⃣ Cart Screen
+View Cart Items – See all added products
 
-Display added products
+Quantity Management – Increase or decrease item quantities
 
-Increase / Decrease quantity
+Remove Items – Delete products from cart
 
-Remove item
+Automatic Total Calculation – Real-time total price updates
 
-Automatic total price calculation
+Persistent Cart – Cart data remains after app restarts
 
-Empty cart handling
+Empty Cart Handling – Friendly message when cart is empty
 
 5️⃣ Navigation
 
-React Navigation (Stack + Tabs)
+React Navigation – Stack + Tabs for smooth routing
 
-Proper screen routing
+Header Configuration – Proper screen headers and back navigation
 
-Header configuration
+6️⃣ Styling & Performance
 
-6️⃣ Styling
+Modern UI Design – Clean and intuitive interface with smooth animations
 
-Clean and consistent UI
+Dark/Light Theme – Toggle between modes with saved preference
 
-Responsive layout
+Responsive Layout – Works well on various screen sizes
 
-Proper spacing
+Consistent Styling – Proper spacing and centralized color theme
 
-Centralized color theme
+Fast Performance – Optimized with React hooks and memoization
+
+7️⃣ Search & Filtering
+
+Search Products – Real-time search functionality
+
+Category Filtering – Filter products by categories
 
 ### Bonus Features Implemented
 
@@ -109,9 +113,7 @@ ECommerceApp/
 ├── assets/
 │
 ├── navigation/
-│   ├── MainTabs.js
-│   ├── AuthStack.js
-│   └── RootNavigator.js
+│   └── AuthStack.js
 │
 ├── screens/
 │   ├── LoginScreen.js
@@ -140,25 +142,72 @@ ECommerceApp/
 
 ### Tech Stack
 
-React Native (Expo)
+React Native (0.72.6, Expo) – Mobile framework
 
-React Navigation
+Expo (49) – Development platform
 
-Context API
+React Navigation (6.x) – Navigation library for stack & tab navigation
 
-JavaScript (ES6+)
+Context API – State management
 
-Fake Store API
+AsyncStorage – Local data persistence
 
-Expo Vector Icons
+JavaScript (ES6+) – Core scripting language
 
-### Installation & Setup
+Fake Store API – Backend API for products
 
-1️⃣ Install Dependencies
-    npm install
+Expo Vector Icons – Icon library
 
-2️⃣ Start Project
+Expo Linear Gradient – Beautiful gradients
+
+## Installation & Setup
+
+## Prerequisites
+
+Node.js (v14 or higher)
+
+npm or yarn
+
+Expo CLI (npm install -g expo-cli)
+
+iOS Simulator (Mac only) or Android Emulator
+
+Expo Go app on your physical device (optional)
+
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/ecommerce-app.git
+cd ecommerce-app
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Install Required Expo Packages
+expo install expo-linear-gradient
+expo install expo-blur
+expo install @react-native-async-storage/async-storage
+expo install react-native-screens react-native-safe-area-context
+
+4️⃣ Install Navigation Packages
+npm install @react-navigation/native @react-navigation/native-stack
+
+5️⃣ Start the Development Server
+npm start
+# or
 npx expo start
+# or
+expo start
+
+6️⃣ Run on Your Device
+
+Android/iOS device: Scan QR code using Expo Go (Android) or Camera app (iOS)
+
+iOS Simulator: Press i
+
+Android Emulator: Press a
+
+## Theme Configuration
+
+The app supports light and dark themes. Colors are defined in src/theme/colors.js.
 
 ## Screenshots
 
@@ -179,7 +228,7 @@ npx expo start
 
 ## Demo Video
 
-A 3–5 minute demo video is included showing:
+A 3.25 minute demo video is included showing:
 
 Authentication flow
 
@@ -195,7 +244,98 @@ Category filter
 
 Search functionality
 
-LINK: 
+LINK: ![Demo video](aseets/video/Demo.mp4)
+Drive link : https://drive.google.com/file/d/1YnWGdzqeePaatSNwx4yHEY-dO6dFsUa8/view?usp=drive_link
+
+### Features
+
+1️⃣ Authentication
+
+Login Screen – Secure login with email & password validation
+
+Signup Screen – New user registration with validation
+
+Navigation – Redirects after successful login/signup
+
+2️⃣ Home Screen
+
+Product Catalog – Browse products with grid layout
+
+Scrollable List – Smooth scrolling using FlatList
+
+Loading Indicator – Shows while fetching products
+
+Error Handling – Displays errors gracefully
+
+3️⃣ Product Details Screen
+
+Product Image – Detailed view of product images
+
+Description & Price – Displays product details clearly
+
+Add to Cart – Easily add products to shopping cart
+
+Navigate to Cart – Quick access to cart screen
+
+4️⃣ Shopping Cart
+
+View Cart Items – See all added products
+
+Quantity Management – Increase or decrease item quantities
+
+Remove Items – Delete products from cart
+
+Automatic Total Calculation – Real-time total price updates
+
+Persistent Cart – Cart data remains after app restarts
+
+Empty Cart Handling – Friendly message when cart is empty
+
+5️⃣ Navigation
+
+React Navigation – Stack + Tabs for smooth routing
+
+Header Configuration – Proper screen headers and back navigation
+
+6️⃣ Styling & Performance
+
+Modern UI Design – Clean and intuitive interface with smooth animations
+
+Dark/Light Theme – Toggle between modes with saved preference
+
+Responsive Layout – Works well on various screen sizes
+
+Consistent Styling – Proper spacing and centralized color theme
+
+Fast Performance – Optimized with React hooks and memoization
+
+7️⃣ Search & Filtering
+
+Search Products – Real-time search functionality
+
+Category Filtering – Filter products by categories
+
+🔍 Bonus Features
+
+Reusable Components
+
+Modular Folder Structure
+
+Loading Indicators
+
+API Error Handling
+
+Theme-aware Components
+
+## API Integration
+
+The app uses Fake Store API:
+
+GET /products – Fetch all products
+
+GET /products/categories – Fetch categories
+
+GET /products/category/:category – Fetch products by category
 
 ### Assumptions Made
 Authentication is frontend-only (no backend integration).
@@ -234,6 +374,10 @@ Add checkout screen
 
 Improve animations & transitions
 
+Payment gateway integration
+
+Order history, wishlist, push notifications, offline mode
+
 ###  Conclusion
 
 This project demonstrates strong understanding of:
@@ -249,6 +393,14 @@ API integration
 UI theming
 
 Clean architecture principles
+
+## Testing
+npm test
+
+## Environment Variables
+API_BASE_URL=https://fakestoreapi.com
+
+
 
 ### Developed by:
 VISHAL SONWANE
